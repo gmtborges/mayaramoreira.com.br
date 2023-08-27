@@ -1,0 +1,60 @@
+---
+import Layout from '~/layouts/PageLayout.astro';
+
+import type { MetaData } from '~/types';
+import { footerData } from '~/navigation';
+
+const metadata: MetaData = {
+  title: 'Agendar consulta',
+};
+---
+
+<Layout metadata={metadata}>
+  <section class="not-prose relative md:-mt-[76px]">
+    <div class="pointer-events-none absolute inset-0" aria-hidden="true"></div>
+    <div class="relative mx-auto max-w-7xl px-4 sm:px-6">
+      <div class="pointer-events-none pt-0 md:pt-[76px]"></div>
+      <div class="py-12 md:py-20">
+        <div class="mx-auto max-w-5xl pb-10 md:pb-16">
+          <h1
+            class="leading-tighter mb-4 mt-4 font-heading text-2xl font-bold tracking-tighter dark:text-gray-200 md:text-3xl"
+          >
+            Agende sua consulta em um dos meus locais de atendimento:
+          </h1>
+          {
+            footerData.addresses.map(({ title, address, map, tel }) => (
+              <>
+                <div class="mb-10 flex flex-col md:flex-row">
+                  <div class="mb-2 w-96">
+                    <h2 class="mb-2 text-lg font-medium dark:text-gray-300">{title}</h2>
+                    <p class="text-muted dark:text-gray-400" set:html={address} />
+                    <>
+                      {tel.map((t) => (
+                        <a
+                          class="my-1 mr-2 block text-base font-bold text-muted transition duration-150 ease-in-out hover:text-gray-700 hover:underline rtl:ml-2 rtl:mr-0 dark:text-gray-400"
+                          href={t.href}
+                          set:html={t.text}
+                        />
+                      ))}
+                    </>
+                  </div>
+                  <div class="w-full md:ml-12">
+                    <h2 class="mb-2 text-lg font-medium dark:text-gray-300">Localização</h2>
+                    <iframe
+                      class="h-56 w-11/12 lg:h-48 lg:w-2/3"
+                      style="border:0"
+                      loading="lazy"
+                      allowfullscreen
+                      referrerpolicy="no-referrer-when-downgrade"
+                      src={`https://www.google.com/maps/embed/v1/place?key=AIzaSyDQxJP8Tqo3NlzlrkLeI3jzz-ZO1_bHwbM&q=${map.latlng}&region=BR`}
+                    />
+                  </div>
+                </div>
+              </>
+            ))
+          }
+        </div>
+      </div>
+    </div>
+  </section>
+</Layout>

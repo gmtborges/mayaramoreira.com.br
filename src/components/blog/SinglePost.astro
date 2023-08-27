@@ -24,8 +24,6 @@ const { Content } = post;
     <header class={post.image ? '' : ''}>
       <div class="flex justify-between flex-col sm:flex-row max-w-3xl mx-auto mt-0 mb-2 px-4 sm:px-6 sm:items-center">
         <p>
-          <Icon name="tabler:clock" class="w-4 h-4 inline-block -mt-0.5 dark:text-gray-400" />
-          <time datetime={String(post.publishDate)} class="inline-block">{getFormattedDate(post.publishDate)}</time>
           {
             post.author && (
               <>
@@ -39,7 +37,6 @@ const { Content } = post;
             post.category && (
               <>
                 {' '}
-                ·{' '}
                 <a class="capitalize hover:underline inline-block" href={getPermalink(post.category, 'category')}>
                   {post.category.replaceAll('-', ' ')}
                 </a>
@@ -55,6 +52,10 @@ const { Content } = post;
       >
         {post.title}
       </h1>
+      <p class="max-w-3xl mx-auto mt-4 mb-8 px-4 sm:px-6 text-xl text-muted dark:text-slate-400 text-justify">
+        <Icon name="tabler:calendar" class="w-4 h-4 inline-block -mt-0.5 dark:text-gray-400" />
+        <time datetime={String(post.publishDate)} class="inline-block ml-2">{getFormattedDate(post.publishDate)}</time>
+      </p>
       <p
         class="max-w-3xl mx-auto mt-4 mb-8 px-4 sm:px-6 text-xl md:text-2xl text-muted dark:text-slate-400 text-justify"
       >
@@ -82,7 +83,7 @@ const { Content } = post;
       }
     </header>
     <div
-      class="mx-auto px-6 sm:px-6 max-w-3xl prose prose-lg lg:prose-xl dark:prose-invert dark:prose-headings:text-slate-300 prose-md prose-headings:font-heading prose-headings:leading-tighter prose-headings:tracking-tighter prose-headings:font-bold prose-a:text-primary dark:prose-a:text-blue-400 prose-img:rounded-md prose-img:shadow-lg mt-8 prose-headings:scroll-mt-[80px]"
+      class="mx-auto px-6 sm:px-6 max-w-3xl text-justify prose prose-lg lg:prose-xl dark:prose-invert dark:prose-headings:text-slate-300 prose-md prose-headings:font-heading prose-headings:leading-tighter prose-headings:tracking-tighter prose-headings:font-bold prose-a:text-primary dark:prose-a:text-blue-400 prose-img:rounded-md prose-img:shadow-lg mt-8 prose-headings:scroll-mt-[80px]"
     >
       {Content ? <Content /> : <Fragment set:html={post.content || ''} />}
     </div>

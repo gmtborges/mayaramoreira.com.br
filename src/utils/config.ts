@@ -80,7 +80,7 @@ const config = yaml.load(fs.readFileSync('src/config.yaml', 'utf8')) as {
   analytics?: unknown;
 };
 
-const DEFAULT_SITE_NAME = 'Website';
+const DEFAULT_SITE_NAME = 'Dra Mayara Moreira';
 
 const getSite = () => {
   const _default = {
@@ -191,7 +191,7 @@ const getAnalytics = () => {
   const _default = {
     vendors: {
       googleAnalytics: {
-        id: undefined,
+        id: '',
         partytown: true,
       },
     },
