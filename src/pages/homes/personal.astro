@@ -25,7 +25,6 @@ const metadata = {
         { text: 'Resume', href: '#resume' },
         { text: 'Porfolio', href: '#porfolio' },
         { text: 'Blog', href: '#blog' },
-        { text: 'Github', href: '#' },
       ]}
       actions={[
         {
@@ -40,11 +39,9 @@ const metadata = {
 
   <!-- Hero2 Widget ******************* -->
 
-  <Hero id="hero" title="Sarah Johnson" tagline="Personal Web Demo" callToAction={{ text: 'Hire me', href: '/' }}>
+  <Hero id="hero" title="Dra. Mayara Moreira" tagline="Otorrino Pediatra" callToAction={{ text: 'Contato', href: '/' }}>
     <Fragment slot="subtitle">
-      I'm a Graphic Designer passionate about crafting visual stories. <br /> With 5 years of experience and a degree
-      from New York University's School of Design. I infuse vitality into brands and designs, transforming concepts into
-      captivating realities.
+      Olá, sou a Mayara. Uma médica que tem um marido incrível.
     </Fragment>
   </Hero>
 
@@ -67,12 +64,12 @@ const metadata = {
       },
     ]}
     image={{
-      src: 'https://images.unsplash.com/photo-1491349174775-aaafddd81942?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=774&q=80',
-      alt: 'Colorful Image',
+      src: '~/assets/images/sobre-mim.jpeg',
+      alt: 'Doutora Mayara Moreira',
     }}
   >
     <Fragment slot="content">
-      <h3 class="text-2xl font-bold tracking-tight dark:text-white sm:text-3xl mb-2">About me</h3>
+      <h3 class="text-2xl font-bold tracking-tight dark:text-white sm:text-3xl mb-2">Sobre Mim</h3>
       <p>
         Welcome to my creative journey. My work is a testament to my commitment to bringing ideas to life, where each
         pixel becomes a brushstroke in the canvas of imagination.
@@ -95,17 +92,29 @@ const metadata = {
 
   <Steps
     id="resume"
-    title="Work experience"
+    title="Currículo"
     items={[
       {
         title:
-          'Graphic Designer <br /> <span class="font-normal">ABC Design Studio, New York, NY</span> <br /> <span class="text-sm font-normal">2021 - Present</span>',
+          'Medicína PUC/GO <br /> <span class="font-normal">Goiânia/GO, BR</span> <br /> <span class="text-sm font-normal">2021 - Present</span>',
         description: `Collaborate with clients to understand design requirements and objectives. <br /> Develop branding solutions, including logos, color palettes, and brand guidelines. <br /> Design marketing materials such as brochures, posters, and digital assets. <br /> Create visually appealing user interfaces for websites and applications.`,
         icon: 'tabler:briefcase',
       },
       {
         title:
-          'Junior Graphic Designer <br /> <span class="font-normal">XYZ Creative Agency, Los Angeles, CA</span> <br /> <span class="text-sm font-normal">2018 - 2021</span>',
+          'Especialidade - Otorrino Rio Preto (ôh cidade quente) <br /> <span class="font-normal">Famerp, São Jose Rio Preto/SP, BR</span> <br /> <span class="text-sm font-normal">2018 - 2021</span>',
+        description: `Assisted senior designers in creating design concepts and visual assets. <br /> Contributed to the development of brand identities and marketing collateral. <br /> Collaborated with the marketing team to ensure consistent design across campaigns. <br /> Gained hands-on experience in various design software and tools.`,
+        icon: 'tabler:briefcase',
+      },
+      {
+        title:
+          'Sub Especialidade Otorrino Pediatria (cidade do chop) <br /> <span class="font-normal">USP, Ribeirao Preto/SP, BR</span> <br /> <span class="text-sm font-normal">2018 - 2021</span>',
+        description: `Assisted senior designers in creating design concepts and visual assets. <br /> Contributed to the development of brand identities and marketing collateral. <br /> Collaborated with the marketing team to ensure consistent design across campaigns. <br /> Gained hands-on experience in various design software and tools.`,
+        icon: 'tabler:briefcase',
+      },
+      {
+        title:
+          'Congresso Otorrino Pediatria (cidade dos bettles) <br /> <span class="font-normal">Congresso Internacional, Liverpool, UK</span> <br /> <span class="text-sm font-normal">2018 - 2021</span>',
         description: `Assisted senior designers in creating design concepts and visual assets. <br /> Contributed to the development of brand identities and marketing collateral. <br /> Collaborated with the marketing team to ensure consistent design across campaigns. <br /> Gained hands-on experience in various design software and tools.`,
         icon: 'tabler:briefcase',
       },
@@ -182,8 +191,7 @@ const metadata = {
 
   <Content
     id="porfolio"
-    title="Elevating visual narratives"
-    subtitle="Embark on a design journey that surpasses pixels, entering a realm of imagination. Explore my portfolio, where passion and creativity converge to shape enthralling visual narratives."
+    title="Trabalhos Relevantes"
     isReversed
     items={[
       {
@@ -204,7 +212,7 @@ const metadata = {
   >
     <Fragment slot="content">
       <h3 class="text-2xl font-bold tracking-tight dark:text-white sm:text-3xl mb-2">
-        Project 1: <br /><span class="text-2xl">Brand identity for tech innovators</span>
+        Publicação Livro <br /><span class="text-2xl">Livro Otorrino Pediatra</span>
       </h3>
     </Fragment>
 
