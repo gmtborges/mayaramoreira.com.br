@@ -8,7 +8,7 @@ site:
 metadata:
   title:
     default: Dra Mayara Moreira
-    template: '%s - mayaramoreira.com.br'
+    template: '%s - Dra Mayara Moreira'
   description: 'Especialista em Otorrino Pediatria'
   robots:
     index: true
