@@ -30,7 +30,11 @@ Os congressos médicos muitas vezes apresentam sessões dedicadas à discussão 
 ##	Motivação e Inspiração
 Participar de congressos médicos pode ser uma fonte de motivação e inspiração para os médicos. Ao interagir com líderes de opinião e especialistas em sua área, os médicos podem renovar seu entusiasmo pela prática médica, descobrir novas perspectivas e abordagens para problemas clínicos e fortalecer seu compromisso com o aprendizado contínuo e a excelência profissional.
 Em resumo, a participação em congressos médicos é essencial para o crescimento e desenvolvimento profissional dos médicos, permitindo-lhes manter-se atualizados, aprimorar suas habilidades clínicas, estabelecer conexões profissionais e promover a prestação de cuidados de saúde de alta qualidade. Ao investir tempo e recursos em participar desses eventos, os médicos demonstram seu compromisso com a excelência clínica e o bem-estar de seus pacientes.
-Por isso, nos dias 21 e 22 de março, estarei em Santiago no Chile para participar do INPAT 2024, encontro dos times de vias aéreas pediátricas participando do maior Congresso Mundial de Otorrino Pediatria, em que estarão reunidas as maiores referencias da Via Aérea Pediátrica do Mundo. 
+
+Por isso, nos dias 21 e 22 de março, estarei em Santiago no Chile para participar 
+do INPAT 2024, encontro dos times de vias aéreas pediátricas participando do 
+maior Congresso Mundial de Otorrino Pediatria, em que estarão reunidas as maiores 
+referencias da Via Aérea Pediátrica do Mundo. 
 
 Estou ansiosa para mais uma imersão dentro da Otorrino Pediatria 
 
