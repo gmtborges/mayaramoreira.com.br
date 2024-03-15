@@ -1,14 +1,17 @@
 ---
-title: 'Os benefícios da Lavagem Nasal nas crianças'
+title: "Os benefícios da Lavagem Nasal nas crianças"
 tags:
-  - 'Lavagem nasal'
-  - 'Otorrino pediatra'
+  - "Lavagem nasal"
+  - "Otorrino pediatra"
 image: ~/assets/images/hero-lavagem-nasal.png
 publishDate: 2023-10-06T00:00:00.000Z
-author: 'Mayara Moreira de Deus'
+author: "Mayara Moreira de Deus"
 ---
 
-A lavagem nasal com solução salina se tornou bastante popular nas últimas décadas. E, apesar de algumas controvérsias recentes, é um procedimento simples, seguro, bem tolerado e com inúmeros benefícios se realizado com a técnica correta.
+A lavagem nasal com solução salina se tornou bastante popular nas últimas
+décadas. E, apesar de algumas controvérsias recentes, é um procedimento simples,
+seguro, bem tolerado e com inúmeros benefícios se realizado com a técnica
+correta.
 
 As principais indicações incluem:
 
@@ -26,15 +29,21 @@ As principais indicações incluem:
 
 7. Alterações do olfato
 
-8. Secreções nasais anteriores, gotejamento nasal posterior, obstrução e congestão nasal.
+8. Secreções nasais anteriores, gotejamento nasal posterior, obstrução e
+   congestão nasal.
 
 Qual a melhor forma de realizar a Lavagem Nasal?
 
 Aquela que você conseguir realizar.
 
-É possível começar com spray nasal, passar para as seringas e conseguir chegar até as garrafinhas.
+É possível começar com spray nasal, passar para as seringas e conseguir chegar
+até as garrafinhas.
 
-Tem crianças que conseguem já iniciar direto com a garrafinha ( geralmente, são as maiores de 7 anos). Tem crianças que só se adaptam à seringa. E, tá tudo bem. O importante é realizar a lavagem nasal de maneira correta. Para uns é simples, mas para outros não é. O importante é que o seu médico estará lá para te ajudar com todas as dúvidas.
+Tem crianças que conseguem já iniciar direto com a garrafinha ( geralmente, são
+as maiores de 7 anos). Tem crianças que só se adaptam à seringa. E, tá tudo bem.
+O importante é realizar a lavagem nasal de maneira correta. Para uns é simples,
+mas para outros não é. O importante é que o seu médico estará lá para te ajudar
+com todas as dúvidas.
 
 Tenha sempre em mente: Use SEMPRE baixa pressão nas crianças
 

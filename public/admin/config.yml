@@ -2,28 +2,33 @@ backend:
   name: git-gateway
   branch: main
 
-media_folder: 'src/assets/images'
-public_folder: '/_astro'
+media_folder: "src/assets/images"
+public_folder: "/_astro"
 
 collections:
-  - name: 'post'
-    label: 'Blog'
-    folder: 'src/content/post'
+  - name: "post"
+    label: "Blog"
+    folder: "src/content/post"
     create: true
     fields:
-      - { label: 'Título', name: 'title', widget: 'string' }
-      - { label: 'Resumo', name: 'excerpt', widget: 'string' }
-      - { label: 'Categoria', name: 'category', widget: 'string' }
+      - { label: "Título", name: "title", widget: "string" }
+      - { label: "Resumo", name: "excerpt", widget: "string" }
+      - { label: "Categoria", name: "category", widget: "string" }
       - {
-          label: 'Tags',
-          name: 'tags',
-          widget: 'list',
+          label: "Tags",
+          name: "tags",
+          widget: "list",
           allow_add: true,
           allow_delete: true,
           collapsed: false,
-          field: { label: 'Tag', name: 'tag', widget: 'string' },
+          field: { label: "Tag", name: "tag", widget: "string" },
         }
-      - { label: 'Imagem', name: 'image', widget: 'string' }
-      - { label: 'Data de publicação', name: 'publishDate', widget: 'datetime', required: false }
-      - { label: 'Autor', name: 'author', widget: 'string' }
-      - { label: 'Conteúdo', name: 'body', widget: 'markdown' }
+      - { label: "Imagem", name: "image", widget: "string" }
+      - {
+          label: "Data de publicação",
+          name: "publishDate",
+          widget: "datetime",
+          required: false,
+        }
+      - { label: "Autor", name: "author", widget: "string" }
+      - { label: "Conteúdo", name: "body", widget: "markdown" }

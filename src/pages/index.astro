@@ -1,15 +1,15 @@
 ---
-import Layout from '~/layouts/PageLayout.astro';
+import Layout from "~/layouts/PageLayout.astro";
 
-import Hero from '~/components/widgets/Hero.astro';
-import Content from '~/components/widgets/Content.astro';
-import Steps from '~/components/widgets/Steps.astro';
-import Features3 from '~/components/widgets/Features3.astro';
-import BlogLatestPosts from '~/components/widgets/BlogLatestPosts.astro';
-import type { MetaData } from '~/types';
+import Hero from "~/components/widgets/Hero.astro";
+import Content from "~/components/widgets/Content.astro";
+import Steps from "~/components/widgets/Steps.astro";
+import Features3 from "~/components/widgets/Features3.astro";
+import BlogLatestPosts from "~/components/widgets/BlogLatestPosts.astro";
+import type { MetaData } from "~/types";
 
 const metadata: MetaData = {
-  title: 'Dra Mayara Moreira - Especialista em Otorrino Pediatria',
+  title: "Dra Mayara Moreira - Especialista em Otorrino Pediatria",
   ignoreTitleTemplate: true,
 };
 ---
@@ -22,14 +22,11 @@ const metadata: MetaData = {
     id="hero"
     title="Dra Mayara Moreira"
     tagline="Otorrino Pediatra"
-    actions={[{ variant: 'primary', text: 'Agendar', href: '/agendar' }]}
+    actions={[{ variant: "primary", text: "Agendar", href: "/agendar" }]}
   >
     <Fragment slot="subtitle">
-      "São as crianças que, sem falar, nos ensinam as razões para viver"<br /><em
-        class="mr-20 flex justify-end text-sm"
-      >
-        Ruben Alves</em
-      >
+      "São as crianças que, sem falar, nos ensinam as razões para viver"<br
+      /><em class="mr-20 flex justify-end text-sm"> Ruben Alves</em>
     </Fragment>
   </Hero>
 
@@ -39,29 +36,40 @@ const metadata: MetaData = {
     id="sobre-mim"
     items={[
       {
-        icon: 'tabler:brand-instagram',
+        icon: "tabler:brand-instagram",
         callToAction: {
-          text: 'Instagram',
-          target: '_blank',
-          href: 'https://instagram.com/dramayaramoreiraa',
+          text: "Instagram",
+          target: "_blank",
+          href: "https://instagram.com/dramayaramoreiraa",
         },
       },
     ]}
     image={{
-      src: '~/assets/images/sobre-mim.jpeg',
-      alt: 'Doutora Mayara Moreira',
+      src: "~/assets/images/sobre-mim.jpeg",
+      alt: "Doutora Mayara Moreira",
     }}
   >
     <Fragment slot="content">
-      <h3 class="mb-2 text-2xl font-bold tracking-tight dark:text-white sm:text-3xl">Sobre Mim</h3>
-      <p>Sempre fui apaixonada por crianças. A inocência, a leveza, a bondade e a sinceridade, sempre me cativaram.</p>
-      <br />
+      <h3
+        class="mb-2 text-2xl font-bold tracking-tight dark:text-white sm:text-3xl"
+      >
+        Sobre Mim
+      </h3>
       <p>
-        Foi essa inspiração que me levou à especializar em Otorrino Pediatria e no cuidado com as crianças especiais.
-        Continuo minha jornada aprendendo diariamente com elas.
+        Sempre fui apaixonada por crianças. A inocência, a leveza, a bondade e a
+        sinceridade, sempre me cativaram.
       </p>
       <br />
-      <p>Se tiver curiosidade em acompanhar meu trabalho, me siga nas redes sociais:</p>
+      <p>
+        Foi essa inspiração que me levou à especializar em Otorrino Pediatria e
+        no cuidado com as crianças especiais. Continuo minha jornada aprendendo
+        diariamente com elas.
+      </p>
+      <br />
+      <p>
+        Se tiver curiosidade em acompanhar meu trabalho, me siga nas redes
+        sociais:
+      </p>
     </Fragment>
 
     <Fragment slot="bg">
@@ -78,30 +86,30 @@ const metadata: MetaData = {
       {
         title:
           'Graduação em Medicina<br /> <span class="font-normal">PUC-GO, Goiânia/GO, Brasil</span> <br /> <span class="text-sm font-normal">2015</span>',
-        icon: 'tabler:school',
+        icon: "tabler:school",
       },
       {
         title:
           'Residência médica em Otorrinolaringologia<br /> <span class="font-normal">FAMERP, São Jose Rio Preto/SP, Brasil</span> <br /> <span class="text-sm font-normal">2020</span>',
-        icon: 'tabler:first-aid-kit',
+        icon: "tabler:first-aid-kit",
       },
       {
         title:
           'Título de Especialista em Otorrinolaringologia<br /> <span class="font-normal">ABORL-CCF, Brasil</span> <br /> <span class="text-sm font-normal">2020</span>',
-        icon: 'tabler:file-certificate',
+        icon: "tabler:file-certificate",
       },
       {
         title:
           'Membro da Comissão de Comunicação<br /> <span class="font-normal">Academia Brasileira de Otorrino Pediatria, Brasil</span> <br /> <span class="text-sm font-normal">2020 - Presente</span>',
-        icon: 'tabler:briefcase',
+        icon: "tabler:briefcase",
       },
       {
         title:
           'Fellowship em Otorrinolaringologia Pediátrica<br /> <span class="font-normal">USP, Ribeirao Preto/SP, Brasil</span> <br /> <span class="text-sm font-normal">2021</span>',
-        icon: 'tabler:first-aid-kit',
+        icon: "tabler:first-aid-kit",
       },
     ]}
-    classes={{ container: 'max-w-3xl' }}
+    classes={{ container: "max-w-3xl" }}
   />
 
   <!-- Content Widget **************** -->
@@ -112,16 +120,19 @@ const metadata: MetaData = {
     isReversed
     items={[
       {
-        title: 'Apresentação de trabalhos científicos no Congresso Europeu de Otorrinolaringologia Pediátrica',
+        title:
+          "Apresentação de trabalhos científicos no Congresso Europeu de Otorrinolaringologia Pediátrica",
       },
     ]}
     image={{
-      src: '~/assets/images/trabalho-liverpool.jpeg',
-      alt: 'Apresentando trabalho no Congresso Europeu de Otorrinolaringologia Pediátrica',
+      src: "~/assets/images/trabalho-liverpool.jpeg",
+      alt: "Apresentando trabalho no Congresso Europeu de Otorrinolaringologia Pediátrica",
     }}
   >
     <Fragment slot="content">
-      <h3 class="mb-2 text-2xl font-bold tracking-tight dark:text-white">ESPO 2023, Liverpool</h3>
+      <h3 class="mb-2 text-2xl font-bold tracking-tight dark:text-white">
+        ESPO 2023, Liverpool
+      </h3>
     </Fragment>
 
     <Fragment slot="bg">
@@ -136,16 +147,18 @@ const metadata: MetaData = {
     items={[
       {
         title:
-          'Participação como uma das autoras no livro Otorrinolaringologia Pediátrica Atuação multiprofissional em crianças com distúrbios respiratórios do sono',
+          "Participação como uma das autoras no livro Otorrinolaringologia Pediátrica Atuação multiprofissional em crianças com distúrbios respiratórios do sono",
       },
     ]}
     image={{
-      src: '~/assets/images/lancamento-livro.jpeg',
-      alt: 'Fashion e-commerce Image',
+      src: "~/assets/images/lancamento-livro.jpeg",
+      alt: "Fashion e-commerce Image",
     }}
   >
     <Fragment slot="content">
-      <h3 class="mb-2 text-2xl font-bold tracking-tight dark:text-white sm:text-3xl">
+      <h3
+        class="mb-2 text-2xl font-bold tracking-tight dark:text-white sm:text-3xl"
+      >
         Lançamento do livro Otorrinolaringologia Pediátrica
       </h3>
     </Fragment>
@@ -163,31 +176,31 @@ const metadata: MetaData = {
     defaultIcon="tabler:point-filled"
     items={[
       {
-        title: 'Nasofibroscopia Flexível',
+        title: "Nasofibroscopia Flexível",
       },
       {
-        title: 'Videoendoscopia da deglutição',
+        title: "Videoendoscopia da deglutição",
       },
       {
-        title: 'Frenectomia',
+        title: "Frenectomia",
       },
       {
-        title: 'Adenoidectomia',
+        title: "Adenoidectomia",
       },
       {
-        title: 'Amigdalectomia',
+        title: "Amigdalectomia",
       },
       {
-        title: 'Timpanotomia com colocação de tubo de ventilação',
+        title: "Timpanotomia com colocação de tubo de ventilação",
       },
       {
-        title: 'Laringotraqueobroncoscopia',
+        title: "Laringotraqueobroncoscopia",
       },
       {
-        title: 'Supraglotoplastia',
+        title: "Supraglotoplastia",
       },
       {
-        title: 'Cirurgia para atresia de coanas',
+        title: "Cirurgia para atresia de coanas",
       },
     ]}
   />

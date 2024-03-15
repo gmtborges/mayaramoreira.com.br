@@ -5,12 +5,17 @@
 
 🌟 _Most *starred* & *forked* Astro theme in 2022 & 2023_. 🌟
 
-**AstroWind** is a free and open-source template to make your website using **[Astro 4.0](https://astro.build/) + [Tailwind CSS](https://tailwindcss.com/)**. Ready to start a new project and designed taking into account web best practices.
+**AstroWind** is a free and open-source template to make your website using
+**[Astro 4.0](https://astro.build/) +
+[Tailwind CSS](https://tailwindcss.com/)**. Ready to start a new project and
+designed taking into account web best practices.
 
 - ✅ **Production-ready** scores in **PageSpeed Insights** reports.
 - ✅ Integration with **Tailwind CSS** supporting **Dark mode** and **_RTL_**.
-- ✅ **Fast and SEO friendly blog** with automatic **RSS feed**, **MDX** support, **Categories & Tags**, **Social Share**, ...
-- ✅ **Image Optimization** (using new **Astro Assets** and **Unpic** for Universal image CDN).
+- ✅ **Fast and SEO friendly blog** with automatic **RSS feed**, **MDX**
+  support, **Categories & Tags**, **Social Share**, ...
+- ✅ **Image Optimization** (using new **Astro Assets** and **Unpic** for
+  Universal image CDN).
 - ✅ Generation of **project sitemap** based on your routes.
 - ✅ **Open Graph tags** for social media sharing.
 - ✅ **Analytics** built-in Google Analytics, and Splitbee integration.
@@ -56,9 +61,14 @@
 
 ## Getting started
 
-**AstroWind** tries to give you quick access to creating a website using [Astro 4.0](https://astro.build/) + [Tailwind CSS](https://tailwindcss.com/). It's a free theme which focuses on simplicity, good practices and high performance.
+**AstroWind** tries to give you quick access to creating a website using
+[Astro 4.0](https://astro.build/) + [Tailwind CSS](https://tailwindcss.com/).
+It's a free theme which focuses on simplicity, good practices and high
+performance.
 
-Very little vanilla javascript is used only to provide basic functionality so that each developer decides which framework (React, Vue, Svelte, Solid JS...) to use and how to approach their goals..
+Very little vanilla javascript is used only to provide basic functionality so
+that each developer decides which framework (React, Vue, Svelte, Solid JS...) to
+use and how to approach their goals..
 
 ### Project structure
 
@@ -113,15 +123,22 @@ Inside **AstroWind** template, you'll see the following folders and files:
 └── ...
 ```
 
-Astro looks for `.astro` or `.md` files in the `src/pages/` directory. Each page is exposed as a route based on its file name.
+Astro looks for `.astro` or `.md` files in the `src/pages/` directory. Each page
+is exposed as a route based on its file name.
 
-There's nothing special about `src/components/`, but that's where we like to put any Astro/React/Vue/Svelte/Preact components.
+There's nothing special about `src/components/`, but that's where we like to put
+any Astro/React/Vue/Svelte/Preact components.
 
-Any static assets, like images, can be placed in the `public/` directory if they do not require any transformation or in the `assets/` directory if they are imported directly.
+Any static assets, like images, can be placed in the `public/` directory if they
+do not require any transformation or in the `assets/` directory if they are
+imported directly.
 
-[![Edit AstroWind on CodeSandbox](https://codesandbox.io/static/img/play-codesandbox.svg)](https://githubbox.com/onwidget/astrowind/tree/main) [![Open in Gitpod](https://svgshare.com/i/xdi.svg)](https://gitpod.io/?on=gitpod#https://github.com/onwidget/astrowind) [![Open in StackBlitz](https://developer.stackblitz.com/img/open_in_stackblitz.svg)](https://stackblitz.com/github/onwidget/astrowind)
+[![Edit AstroWind on CodeSandbox](https://codesandbox.io/static/img/play-codesandbox.svg)](https://githubbox.com/onwidget/astrowind/tree/main)
+[![Open in Gitpod](https://svgshare.com/i/xdi.svg)](https://gitpod.io/?on=gitpod#https://github.com/onwidget/astrowind)
+[![Open in StackBlitz](https://developer.stackblitz.com/img/open_in_stackblitz.svg)](https://stackblitz.com/github/onwidget/astrowind)
 
-> 🧑‍🚀 **Seasoned astronaut?** Delete this file `README.md`. Update `src/config.yaml` and contents. Have fun!
+> 🧑‍🚀 **Seasoned astronaut?** Delete this file `README.md`. Update
+> `src/config.yaml` and contents. Have fun!
 
 <br>
 
@@ -147,9 +164,9 @@ Basic configuration file: `./src/config.yaml`
 
 ```yaml
 site:
-  name: 'Example'
-  site: 'https://example.com'
-  base: '/' # Change this if you need to deploy to Github Pages, for example
+  name: "Example"
+  site: "https://example.com"
+  base: "/" # Change this if you need to deploy to Github Pages, for example
   trailingSlash: false # Generate permalinks with or without "/" at the end
 
   googleSiteVerificationId: false # Or some value,
@@ -157,22 +174,22 @@ site:
 # Default SEO metadata
 metadata:
   title:
-    default: 'Example'
-    template: '%s — Example'
-  description: 'This is the default meta description of Example website'
+    default: "Example"
+    template: "%s — Example"
+  description: "This is the default meta description of Example website"
   robots:
     index: true
     follow: true
   openGraph:
-    site_name: 'Example'
+    site_name: "Example"
     images:
-      - url: '~/assets/images/default.jpg'
+      - url: "~/assets/images/default.jpg"
         width: 1200
         height: 628
     type: website
   twitter:
-    handle: '@twitter_user'
-    site: '@twitter_user'
+    handle: "@twitter_user"
+    site: "@twitter_user"
     cardType: summary_large_image
 
 i18n:
@@ -186,25 +203,25 @@ apps:
 
     post:
       isEnabled: true
-      permalink: '/blog/%slug%' # Variables: %slug%, %year%, %month%, %day%, %hour%, %minute%, %second%, %category%
+      permalink: "/blog/%slug%" # Variables: %slug%, %year%, %month%, %day%, %hour%, %minute%, %second%, %category%
       robots:
         index: true
 
     list:
       isEnabled: true
-      pathname: 'blog' # Blog main path, you can change this to "articles" (/articles)
+      pathname: "blog" # Blog main path, you can change this to "articles" (/articles)
       robots:
         index: true
 
     category:
       isEnabled: true
-      pathname: 'category' # Category main path /category/some-category, you can change this to "group" (/group/some-category)
+      pathname: "category" # Category main path /category/some-category, you can change this to "group" (/group/some-category)
       robots:
         index: true
 
     tag:
       isEnabled: true
-      pathname: 'tag' # Tag main path /tag/some-tag, you can change this to "topics" (/topics/some-category)
+      pathname: "tag" # Tag main path /tag/some-tag, you can change this to "topics" (/topics/some-category)
       robots:
         index: false
 
@@ -217,7 +234,7 @@ analytics:
       id: null # or "G-XXXXXXXXXX"
 
 ui:
-  theme: 'system' # Values: "system" | "light" | "dark" | "light:only" | "dark:only"
+  theme: "system" # Values: "system" | "light" | "dark" | "light:only" | "dark:only"
 ```
 
 <br>
@@ -260,18 +277,24 @@ Clone this repository on own GitHub account and deploy to Vercel:
 
 ## Related projects
 
-- [TailNext](https://tailnext.vercel.app/) - Free template using Next.js 14 and Tailwind CSS with the new App Router.
-- [Qwind](https://qwind.pages.dev/) - Free template to make your website using Qwik + Tailwind CSS.
+- [TailNext](https://tailnext.vercel.app/) - Free template using Next.js 14 and
+  Tailwind CSS with the new App Router.
+- [Qwind](https://qwind.pages.dev/) - Free template to make your website using
+  Qwik + Tailwind CSS.
 
 ## Contributing
 
-If you have any idea, suggestions or find any bugs, feel free to open a discussion, an issue or create a pull request.
-That would be very useful for all of us and we would be happy to listen and take action.
+If you have any idea, suggestions or find any bugs, feel free to open a
+discussion, an issue or create a pull request. That would be very useful for all
+of us and we would be happy to listen and take action.
 
 ## Acknowledgements
 
-Initially created by [onWidget](https://onwidget.com) and maintained by a community of [contributors](https://github.com/onwidget/astrowind/graphs/contributors).
+Initially created by [onWidget](https://onwidget.com) and maintained by a
+community of
+[contributors](https://github.com/onwidget/astrowind/graphs/contributors).
 
 ## License
 
-**AstroWind** is licensed under the MIT license — see the [LICENSE](./LICENSE.md) file for details.
+**AstroWind** is licensed under the MIT license — see the
+[LICENSE](./LICENSE.md) file for details.

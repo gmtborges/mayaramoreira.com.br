@@ -12,7 +12,9 @@ export interface Props {
 
 const { post } = Astro.props;
 const fetchedPosts = await fetchPosts();
-const relatedPosts = post.tags ? getRelatedPosts(fetchedPosts, post.slug, post.tags) : [];
+const relatedPosts = post.tags
+  ? getRelatedPosts(fetchedPosts, post.slug, post.tags)
+  : [];
 ---
 
 {
@@ -22,7 +24,7 @@ const relatedPosts = post.tags ? getRelatedPosts(fetchedPosts, post.slug, post.t
       title="Related Posts"
       linkText="View All Posts"
       linkUrl={getBlogPermalink()}
-      postIds={relatedPosts.map((post) => post.id)}
+      postIds={relatedPosts.map(post => post.id)}
     />
   ) : null
 }

@@ -1,22 +1,22 @@
 site:
   name: Dra Mayara Moreira
-  site: 'https://mayaramoreira.com.br'
-  base: '/'
+  site: "https://mayaramoreira.com.br"
+  base: "/"
   trailingSlash: false
   googleSiteVerificationId: false
 # Default SEO metadata
 metadata:
   title:
     default: Dra Mayara Moreira
-    template: '%s - Dra Mayara Moreira'
-  description: 'Otorrino Pediatra em Goiânia, com fellowship pela USP'
+    template: "%s - Dra Mayara Moreira"
+  description: "Otorrino Pediatra em Goiânia, com fellowship pela USP"
   robots:
     index: true
     follow: true
   openGraph:
     site_name: Dra Mayara Moreira
     images:
-      - url: '~/assets/images/sobre-min.jpeg'
+      - url: "~/assets/images/sobre-min.jpeg"
         width: 1200
         height: 628
     type: website
@@ -29,22 +29,22 @@ apps:
     postsPerPage: 6
     post:
       isEnabled: true
-      permalink: 'blog/%slug%' # Variables: %slug%, %year%, %month%, %day%, %hour%, %minute%, %second%, %category%
+      permalink: "blog/%slug%" # Variables: %slug%, %year%, %month%, %day%, %hour%, %minute%, %second%, %category%
       robots:
         index: true
     list:
       isEnabled: true
-      pathname: 'blog' # Blog main path, you can change this to "articles" (/articles)
+      pathname: "blog" # Blog main path, you can change this to "articles" (/articles)
       robots:
         index: true
     category:
       isEnabled: true
-      pathname: 'categorias' # Category main path /category/some-category, you can change this to "group" (/group/some-category)
+      pathname: "categorias" # Category main path /category/some-category, you can change this to "group" (/group/some-category)
       robots:
         index: true
     tag:
       isEnabled: true
-      pathname: 'tags' # Tag main path /tag/some-tag, you can change this to "topics" (/topics/some-category)
+      pathname: "tags" # Tag main path /tag/some-tag, you can change this to "topics" (/topics/some-category)
       robots:
         index: false
 
@@ -56,7 +56,7 @@ analytics:
     googleAnalytics:
       id: null # or "G-XXXXXXXXXX"
 ui:
-  theme: 'system' # Values: "system" | "light" | "dark" | "light:only" | "dark:only"
+  theme: "system" # Values: "system" | "light" | "dark" | "light:only" | "dark:only"
   tokens:
     default:
       fonts:
