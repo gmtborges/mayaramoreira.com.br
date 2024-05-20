@@ -120,6 +120,35 @@ const metadata: MetaData = {
     isReversed
     items={[
       {
+        icon: "tabler:download",
+        callToAction: {
+          text: "Download do Manual",
+          target: "_blank",
+          href: "/lavagem-nasal.pdf",
+        },
+      },
+    ]}
+    image={{
+      src: "~/assets/images/lavagem-nasal.png",
+      alt: "Capa do manual de Lavagem Nasal",
+    }}
+  >
+    <Fragment slot="content">
+      <h3 class="mb-2 text-2xl font-bold tracking-tight dark:text-white">
+        Manual de Lavagem Nasal em Crianças
+      </h3>
+    </Fragment>
+
+    <Fragment slot="bg">
+      <div class="absolute inset-0 bg-blue-50 dark:bg-transparent"></div>
+    </Fragment>
+  </Content>
+
+
+  <Content
+    isReversed
+    items={[
+      {
         title:
           "Apresentação de trabalhos científicos no Congresso Europeu de Otorrinolaringologia Pediátrica",
       },
