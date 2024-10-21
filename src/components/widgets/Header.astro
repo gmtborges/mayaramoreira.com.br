@@ -72,7 +72,11 @@ const currentPath = `/${trimSlash(new URL(Astro.url).pathname)}`;
         "flex justify-between",
       ]}
     >
-      <a class="flex items-center" href={getHomePermalink()}>
+      <a
+        aria-label="Ir para o ínicio"
+        class="flex items-center"
+        href={getHomePermalink()}
+      >
         <Logo />
       </a>
       <div class="flex items-center md:hidden">
